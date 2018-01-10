@@ -23,8 +23,6 @@ for i in range(0,len(dates)):
     year,month,date = dates[i].split('-')
     monthCount[int(month)-1] += 1
 
-contactMonth = max(monthCount)
-
 contactMonthIndex = np.argmax(monthCount) + 1
 
 contactMonth = calendar.month_abbr[contactMonthIndex]
